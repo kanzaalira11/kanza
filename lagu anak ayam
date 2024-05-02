@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+// Input bilangan anak ayam (N)
+int N;
+std::cout << "Masukkan jumlah semula anak ayam (N): "; std::cin >> N;
+
+// Proses mencetak lagu anak ayam
+for (int i = N; i > 0; --i) {
+std::cout << "Anak ayam turunlah " << i << std::endl;
+if (i > 1) {
+std::cout << "Mati 1 tinggallah " << (i - 1) << std::endl;
+ } else {
+std::cout << "Mati 1 tinggal induknya" << std::endl;
+ }
+}
+
+return 0;
+}
